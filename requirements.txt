@@ -1,0 +1,25 @@
+# --- Core pipeline (required) ---------------------------------------------
+yt-dlp>=2024.8.6
+ffmpeg-python>=0.2.0
+faster-whisper>=1.0.3
+edge-tts>=6.1.12
+deep-translator>=1.11.4
+pydub>=0.25.1
+tqdm>=4.66.4
+rich>=13.7.1
+python-dotenv>=1.0.1
+
+# --- Optional: NLLB / IndicTrans2 translation backends ---------------------
+torch>=2.2.0
+transformers>=4.42.0
+# IndicTransToolkit  # install from https://github.com/AI4Bharat/IndicTransToolkit
+#                    # if you plan to use TRANSLATION_ENGINE=indictrans2
+
+# --- Optional: speaker diarization -----------------------------------------
+pyannote.audio>=3.1.1
+
+# --- Optional: voice cloning (GPU recommended) ------------------------------
+coqui-tts>=0.24.1
+
+# --- Optional: chunked/long-video helpers -----------------------------------
+moviepy>=1.0.3
